@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.header {
+	background-color: #445162;
+	height: 323px;
+}
+
+.top {
+	display: inline-block;
+}
+
+.top h1 {
+	padding-left: 10px;
+	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3);
+	font-family: ArialMT;
+	font-size: 60px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.top-list {
+	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3);
+	font-family: ArialMT;
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.top-img {
+	display: inline-block;
+	width: 469px;
+	height: 214px;
+}

@@ -7,6 +7,7 @@
 	width: 1280px;
 	margin: 0 auto;
 	box-sizing: border-box;
+	font-family: Arial;
 }
 
 .main-header {
@@ -71,6 +72,13 @@
 	box-sizing: border-box;
 }
 
+.about-product:after {
+	content: "";
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
 .about-product h3 {
 	font-family: Arial;
 	font-size: 30px;
@@ -101,6 +109,13 @@
 	min-height: 415px;
 	padding: 50px;
 	box-sizing: border-box;
+}
+
+.products-pluses:after {
+	content: "";
+	display: block;
+	width: 100%;
+	clear: both;
 }
 
 .products-pluses h3 {
@@ -147,11 +162,23 @@
 	left: -40px;
 }
 
+.products-pluses-list li:nth-child(5),
+.products-pluses-list li:nth-child(6) {
+	margin-bottom: 0;
+}
+
 .screenshot {
 	background-color: #ffffff;
 	min-height: 500px;
 	padding: 50px;
 	box-sizing: border-box;
+}
+
+.screenshot:after {
+	content: "";
+	display: block;
+	width: 100%;
+	clear: both;
 }
 
 .screenshot h3 {
@@ -161,14 +188,19 @@
 	font-weight: 400;
 	color: #445161;
 	text-align: center;
-	margin: 0 0 30px 0;
+	margin: 0;
 }
 
 .desk-img {
 	display: block;
 	float: left;
-	width: 571px;
-	margin: 10px 10px 10px 0;
+	width: 575px;
+	margin: 30px 15px 0 7px;
+}
+
+.desk-img:nth-child(2),
+.desk-img:nth-child(4) {
+	margin-right: 0;
 }
 
 .desk-img h3 {
@@ -187,10 +219,205 @@
 	font-weight: 400;
 	text-align: left;
 	line-height: 24px;
-	margin: 2px 0 0 0;
+	margin: 0 5px 0 0;
 }
 
 .screenshot-img {
 	margin: 0 10px 0 0;
 	float: left;
 }
+
+.reviews {
+	min-height: 250px;
+	background-color: #f5f5f5;
+	padding: 50px;
+}
+
+.reviews:after {
+	content: "";
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+.reviews h3 {
+	font-family: Arial;
+	color: #445161;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	margin: 0;
+}
+
+.review {
+	margin: 25px 0 0 0;
+}
+
+.review:nth-child(1),
+.review:nth-child(3) {
+	margin: 0 18px 20px 42px;
+	float: left;
+}
+
+.review-img {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	background-color: #445161;
+	float: left;
+}
+
+.review-text {
+	width: 436px;
+	display: block;
+	float: left;
+	background-color: #ebebeb;
+	padding: 15px;
+	color: #333333;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: Arial;
+	font-style: italic;
+	margin-left: 32px;
+	border-radius: 3%;
+	position: relative;
+}
+
+.review-text:nth-child(2),
+.review-text:nth-child(4) {
+	margin-right: -13px;
+}
+
+.review-text:before {
+	content: "";
+	display: block;
+	width: 11px;
+	height: 5px;
+	border: 10px solid transparent;
+	border-right: 15px solid #ebebeb;
+	-webkit-background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 29px;
+	left: -35px;
+}
+
+
+.review-text a {
+	text-decoration: none;
+	color: #989898;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: Arial;
+	font-style: normal;
+	display: block;
+	padding-top: 10px;
+}
+
+.buy {
+	padding: 50px;
+	min-height: 580px;
+	background-color: #ffffff;
+}
+
+.buy:after {
+	content: "";
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+.buy h3 {
+	color: #445161;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.buy-standart,
+.buy-premium,
+.buy-lux {
+	background-color: #445162;
+	width: 300px;
+	float: left;
+	border-radius: 2%;
+}
+
+.buy-standart {
+	height: 306px;
+	margin-left: 95px;
+	margin-top: 225px;
+}
+
+.buy-premium {
+	height: 404px;
+	margin-left: 40px;
+	margin-top: 129px;
+}
+
+.buy-lux {
+	height: 499px;
+	margin-left: 40px;
+	margin-top: 35px;
+}
+
+.buy-standart h3,
+.buy-premium h3,
+.buy-lux h3 {
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+	margin: 15px 0 15px 0;
+}
+
+.buy-standart span,
+.buy-premium span,
+.buy-lux span {
+	color: #445162;
+	font-size: 40px;
+	font-weight: 400;
+	display: table-cell;
+	background-color: #ffffff;
+	height: 71px;
+	width: 297px;
+	border: 2px solid #445162;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.buy-standart ol,
+.buy-premium ol,
+.buy-lux ol {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+	padding: 15px 0 0 35px;
+}
+
+button {
+	display: block;
+	color: #445161;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	height: 40px;
+	width: 260px;
+	background-color: #ffffff;
+	border-radius: 7px;
+	margin: 10px 0 0 22px;
+	outline: none;
+}
+
+button:hover {
+	color: #808080;
+	background-color: #DCDCDC;
+}
+
+button:active {
+	color: #445161;
+	background-color: #A9A9A9;
+}
+

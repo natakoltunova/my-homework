@@ -204,16 +204,15 @@
 }
 
 .desk-img h3 {
-	font-family: Arial;
 	color: #445161;
 	font-size: 24px;
 	font-weight: 400;
 	text-align: left;
-	margin: -5px 0 0 0;
+	line-height: 21px;
+	margin: 0 0 10px 0;
 }
 
 .desk-img p {
-	font-family: Arial;
 	color: #333333;
 	font-size: 16px;
 	font-weight: 400;
@@ -249,14 +248,22 @@
 	margin: 0;
 }
 
-.review {
-	margin: 25px 0 0 0;
-}
-
 .review:nth-child(1),
 .review:nth-child(3) {
 	margin: 0 18px 20px 42px;
 	float: left;
+}
+
+.review:nth-child(2),
+.review:nth-child(4) {
+	margin: 25px 0 0 0;
+	float: left;
+}
+
+.review:nth-child(3),
+.review:nth-child(5) {
+	margin: 25px 0 0 0;
+	float: right;
 }
 
 .review-img {
@@ -302,7 +309,6 @@
 	left: -35px;
 }
 
-
 .review-text a {
 	text-decoration: none;
 	color: #989898;
@@ -311,13 +317,14 @@
 	font-family: Arial;
 	font-style: normal;
 	display: block;
-	padding-top: 10px;
+	margin: 10px 0 0 0;
 }
 
 .buy {
 	padding: 50px;
 	min-height: 580px;
 	background-color: #ffffff;
+	box-sizing: border-box;
 }
 
 .buy:after {
@@ -341,6 +348,7 @@
 	width: 300px;
 	float: left;
 	border-radius: 2%;
+	position: relative;
 }
 
 .buy-standart {
@@ -397,7 +405,7 @@
 	padding: 15px 0 0 35px;
 }
 
-button {
+.btn-buy {
 	display: block;
 	color: #445161;
 	font-size: 18px;
@@ -411,13 +419,225 @@ button {
 	outline: none;
 }
 
-button:hover {
+.btn-buy:hover {
 	color: #808080;
 	background-color: #DCDCDC;
 }
 
-button:active {
+.btn-buy:active {
 	color: #445161;
 	background-color: #A9A9A9;
 }
 
+.main-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 1280px;
+	min-height: 509px;
+	padding: 50px;
+	background-color: #445161;
+	justify-content: space-around;
+	box-sizing: border-box;
+}
+
+.main-footer-span {
+	display: block;
+	width: 100%;
+	height: 40px;
+	color: #ffffff;
+	line-height: 36px;
+	font-size: 30px;
+	font-weight: 400;
+	padding: 0 0 50px 525px;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.main-footer-form {
+	margin: 0 0 0 0;
+}
+
+input[type="text"],
+input[type="email"] {
+	width: 500px;
+	height: 40px;
+	margin: 0 0 20px 0;
+	padding: 0 0 0 10px;
+	border-radius: 10px;
+	outline: none;
+	box-sizing: border-box;
+}
+
+textarea {
+	width: 500px;
+	height: 170px;
+	margin: 0 0 20px 0;
+	word-break: break-all;
+	padding: 10px 0 0 10px;
+	border-radius: 10px;
+	outline: none;
+	font-family: Arial;
+	box-sizing: border-box;
+}
+
+input[type="submit"] {
+	display: block;
+	width: 140px;
+	margin: 0 auto;
+	padding: 9px 0 9px 0;
+	color: #445162;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 10px;
+	outline: none;
+	box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+	background-color: darkgrey;
+	color: aliceblue;
+}
+
+input[type="submit"]:active {
+	background-color: darkgrey;
+	color: #445162;
+}
+
+input[type="submit"] {
+	display: block;
+	width: 140px;
+	margin: 0 auto;
+	padding: 8px;
+	color: #445162;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 10px;
+	outline: none;
+}
+
+.main-footer-contacts {
+	margin: 0 0 0 -300px;
+}
+
+.contacts {
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.contacts li {
+	list-style-type: none;
+	margin: 0 0 20px 0;
+	line-height: 24px;
+}
+
+.contacts-list {
+	position: relative;
+}
+
+.contacts-list2 {
+	position: relative;
+}
+
+.contacts-list3 {
+	position: relative;
+}
+
+.contacts-list4 {
+	position: relative;
+}
+
+.contacts-list:before {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 26px;
+	background-image: url("../img/skype_icon.png");
+	-webkit-background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: -34px;
+}
+
+.contacts-list2:before {
+	content: "";
+	display: block;
+	width: 26px;
+	height: 26px;
+	background-image: url("../img/icq_icon.png");
+	-webkit-background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: -34px;
+}
+
+.contacts-list3:before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	background-image: url("../img/email_icon.png");
+	-webkit-background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: -34px;
+}
+
+.contacts-list4:before {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 23px;
+	background-image: url("../img/phone_icon.png");
+	-webkit-background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: -34px;
+}
+
+.social-networks {
+	width: 240px;
+	margin: 20px 0 0 -34px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.social-icons {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.simbols {
+	color: #445161;
+	font-size: 25px;
+	padding: 8px 21px 0 0px;
+	position: relative;
+	top: 12;
+	left: -201px;
+	box-sizing: border-box;
+}
+
+.copyright {
+	width: 100%;
+	color: #445161;
+	background-color: #f5f5f5;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: 400;
+	text-align: center;
+	padding: 5px 0 0 5px;
+	box-sizing: border-box;
+}
+
+.copyright span {
+	text-transform: uppercase;
+}

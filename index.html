@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Макет simple_psd_template</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -26,7 +27,8 @@
 				<h3>About your product</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo&nbsp;at. Natus eos, eligendi illum rerum omnis porro&nbsp;ex, magni, explicabo veniam incidunt in&nbsp;quam sapiente ut&nbsp;ipsum.</p>
 				<p>Pariatur iure ab&nbsp;sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
-				<div class="video-product"><img src="img/video_14.jpg" alt="top-img" width="430" height="245"></div>
+				<img class="video-product" src="img/video_14.jpg" alt="product video" width="430" height="245">
+				<!--				<video src="img/video_14.jpg" width="430" height="245"></video>-->
 			</article>
 			<section class="products-pluses">
 				<h3>Dignity and pluses product</h3>
@@ -112,7 +114,7 @@
 						<li>Cum odio, iste quia doloribus autem;</li>
 						<li>Aperiam nulla ea neque.</li>
 					</ol>
-					<button>buy</button>
+					<button class="btn-buy">buy</button>
 				</div>
 				<div class="buy-premium">
 					<h3>Premium</h3>
@@ -127,7 +129,7 @@
 						<li>Cum odio, iste quia doloribus autem;</li>
 						<li>Aperiam nulla ea neque.</li>
 					</ol>
-					<button>buy</button>
+					<button class="btn-buy">buy</button>
 				</div>
 				<div class="buy-lux">
 					<h3>Lux</h3>
@@ -146,13 +148,44 @@
 						<li>Cum odio, iste quia doloribus autem;</li>
 						<li>Aperiam nulla ea neque.</li>
 					</ol>
-					<button>buy</button>
+					<button class="btn-buy">buy</button>
 				</div>
 			</section>
 		</main>
 
-		<footer></footer>
+		<footer class="main-footer">
+			<span class="main-footer-span">Contacts</span>
+			<form class="main-footer-form" action="#" method="post">
+				<div><input type="text" placeholder="Your name:"></div>
+				<div><input type="email" placeholder="Your email:"></div>
+				<div><textarea placeholder="Your message:"></textarea></div>
+				<div><input type="submit" value="send"></div>
+			</form>
+			<div class="main-footer-contacts">
+				<ul class="contacts">
+					<li class="contacts-list">here_your_login_skype</li>
+					<li class="contacts-list2">279679659</li>
+					<li class="contacts-list3">psdhtmlcss@mail.ru</li>
+					<li class="contacts-list4">80 00 4568 55 55</li>
+				</ul>
+				<div class="social-networks">
+					<a href="#"><div class="social-icons"></div></a>
+					<a href="#"><div class="social-icons"></div></a>
+					<a href="#"><div class="social-icons"></div></a>
+					<a href="#"><div class="social-icons"></div></a>
+					<a href="#"><div class="social-icons"></div></a>
+					<a href="#"><div class="simbols"><i class="fab fa-twitter"></i></div></a>
+					<a href="#"><div class="simbols"><i class="fab fa-facebook-f"></i></div></a>
+					<a href="#"><div class="simbols"><i class="fab fa-linkedin-in"></i></div></a>
+					<a href="#"><div class="simbols"><i class="fab fa-github"></i></div></a>
+					<a href="#"><div class="simbols"><i class="fab fa-youtube"></i></div></a>
+				</div>
+			</div>
+		</footer>
 
+		<footer class="copyright">
+			<div>Copyright &copy; 2014 Product name - <span>psd html css</span></div>
+		</footer>
 	</div>
 </body>
 
